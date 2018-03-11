@@ -4,7 +4,7 @@
     <title>VA WePoll</title>
         <style>
           body{
-          background-color: #ccffcc
+          background-color: #ccffff
         }
         </style>
         <style>
@@ -70,27 +70,19 @@
     <p>Every 3 months, we send and email to your state government about the top voted issues.</p>
     <hr>                
     
-<form>
-  Add your issue to the list:<br>
-  <input type="text" name="issue" value="Issue">
-  <br>
-  Enter your name:<br>
-  <input type="text" name="name" value="Your Name">
-  <br><br>
-  <button onclick="newssue()">Try it</button>
 
 <p id="duck"></p>
 
 <script>
 function newssue() {
-    var person = prompt("Please enter your name", "Harry Potter");
+    var person = prompt("Enter your issue", "fdsjfsdhfks");
     if (person != null) {
         document.getElementById("duck").innerHTML =
         "Hello " + person + "! How are you today?";
     }
 }
 </script>
-</form>
+
 
 <br>
 
