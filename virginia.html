@@ -77,13 +77,19 @@
   Enter your name:<br>
   <input type="text" name="name" value="Your Name">
   <br><br>
-  <button onclick="newssue()">Submit</button>
-  <p id="duck"></p>
-  <script>
-   function newssue() {
-    document.getElementById("duck").innerHTML = "Hello World";
-}   
-  </script>
+  <button onclick="newssue()">Try it</button>
+
+<p id="duck"></p>
+
+<script>
+function newssue() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    if (person != null) {
+        document.getElementById("duck").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
 </form>
 
 <br>
