@@ -93,9 +93,9 @@
     </select>
 <script>
 function vote() {
- if(document.getElementById("voting").value == "up"){
-   <p>4283274823848</p>
- }
+ var par=document.getElementsByName('voting')[0];
+   var index=par.selectedIndex
+   console.log(par.options[index].text);
 }
     </script>
   </div>
