@@ -4,34 +4,25 @@
     <title>VA WePoll</title>
         <style>
           body{
-          background-color: #ff66cc
+          background-color: #ffff66
         }
         </style>
         <style>
 * {
     box-sizing: border-box;
 }
-
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
     padding: 10px;
 }
-
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-} 
-
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Add icon library -->
@@ -45,7 +36,6 @@
     font-size: 16px;
     cursor: pointer;
 }
-
 /* Darker background on mouse-over */
 .btn:active {
     background-color: RoyalBlue;
@@ -75,18 +65,19 @@
     <p>Every 3 months, we send and email to your state government about the top voted issues.</p>
     <hr>                
     
-<form>
-  <div>
-    
-    <label for="issue">Add your own issue to the list: </label>
-    <input type="text" id="issue" name="name">
-    <label for="name">Write your name here: </label>
-    <input type="text" id="name" name="name">
-  </div>
-  <div>
-    <button>Submit</button>
-  </div>
-</form>
+<button onclick="newssue()">Enter your Issue</button>
+<p id="duck"></p>
+
+<script>
+function newssue() {
+    var person = prompt("Enter your issue", "fdsjfsdhfks");
+    if (person != null) {
+        document.getElementById("duck").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
+
 
 <br>
 
@@ -137,17 +128,14 @@ function vote2() {
 <script>
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
-
 // Declare a loop variable
 var i;
-
 // List View
 function listView() {
     for (i = 0; i < elements.length; i++) {
         elements[i].style.width = "100%";
     }
 }
-
 /* Optional: Add active class to the current button (highlight it) */
 var container = document.getElementById("btnContainer");
 var btns = container.getElementsByClassName("btn");
