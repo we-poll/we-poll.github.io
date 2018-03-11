@@ -4,7 +4,7 @@
     <title>VA WePoll</title>
         <style>
           body{
-          background-color: #ccffee
+          background-color: #ccffcc
         }
         </style>
         <style>
@@ -96,7 +96,11 @@
 <script>
 function vote() {
     var x = document.getElementById("voting").value;
-    document.getElementById("demo").innerHTML = "Vote number: 10";
+    if (x == "up"){
+      x = 1,365,724 
+    } else{
+      x = 1,365,722
+    document.getElementById("demo").innerHTML = "Vote number: " + x;
 }
     </script>
   </div>
