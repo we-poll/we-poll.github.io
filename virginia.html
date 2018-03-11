@@ -4,7 +4,7 @@
     <title>VA WePoll</title>
         <style>
           body{
-          background-color: #ffffcc
+          background-color: #ccffcc
         }
         </style>
         <style>
@@ -61,9 +61,6 @@
     <p>You can write and vote for the issues you want your local legislators to discuss.</p>
     <p>Every 3 months, we send and email to your state government about the top voted issues.</p>
     <hr>                
-    
-
-
 
 <br>
 
@@ -129,6 +126,7 @@ function vote3() {
   </div>
   <div class="column" style="background-color:#ddd;">
   <button onclick="newssue()">Enter your Issue</button>
+  
 <p id="duck"></p>
 
 <script>
@@ -136,9 +134,10 @@ function newssue() {
     var person = prompt("Enter your issue", "fdsjfsdhfks");
     if (person != null) {
         document.getElementById("duck").innerHTML =
-        "Hello " + person + "! How are you today?";
+        person;
     }
 }
+button.style.visibility = "hidden";
 </script>
     <p>you eat ass. </p>
   </div>
