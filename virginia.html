@@ -4,7 +4,7 @@
     <title>VA WePoll</title>
         <style>
           body{
-          background-color: #ffff66
+          background-color: #ffffff
         }
         </style>
         <style>
@@ -70,7 +70,7 @@
 
 <script>
 function newssue() {
-    var person = prompt("Enter your issue", "fdsjfsdhfks");
+    person = prompt("Enter your issue", "fdsjfsdhfks");
     if (person != null) {
         document.getElementById("duck").innerHTML =
         "Hello " + person + "! How are you today?";
@@ -122,6 +122,28 @@ function vote2() {
   <div class="column" style="background-color:#ddd;">
     <h1>Clean up the litter in Burke Lake.</h1>
     <p>Trash in Burke Lake is harmful to the flora and fauna, we need to clean it up ASAP. </p>
+  </div>
+</div>
+    
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+    <b>Vote:</b>
+    <select id="voting" onchange="vote3()">
+      <option value="idk">-Choose-</option>
+      <option value="up">Agree</option>
+      <option value="down">Disagree</option>
+    </select>
+ <p id="cat"></p>
+<script>
+function vote3() {
+    var x = document.getElementById("voting").value;
+    document.getElementById("cat").innerHTML = "Vote number: 1";
+}
+    </script>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h1>"a " + person.</h1>
+    <p>you eat ass. </p>
   </div>
 </div>
 
