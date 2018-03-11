@@ -89,12 +89,19 @@
     <b>Vote:</b>
     <select id="voting" onchange="vote()">
       <option value="up">Agree</option>
+      
       <option value="down">Disagree</option>
     </select>
  <p id="demo"></p>
 <script>
 function vote() {
     var x = document.getElementById("voting").value;
+    if ( x == up){
+      x = 1,365,723;
+    }
+    if ( x == down){
+      x = 1,365,722;
+    }
     document.getElementById("demo").innerHTML = "You selected: " + x;
 }
     </script>
