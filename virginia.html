@@ -46,6 +46,22 @@
     background-color: RoyalBlue;
 }
     </style>
+    <script>
+ function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } 
+    }
+ </script>    
+    
+    
+    
+    
  </head>
   
   <body>
@@ -67,8 +83,8 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <h1>1,365,723</h1>
-    <button class="btn"><i class="fa fa-check"></i></button>
+    <h1>localStorage.clickcount</h1>
+    <button onclick="clickCounter()">< type="button">Click me!</button>
     <button class="btn"><i class="fa fa-close"></i></button>
   </div>
   <div class="column" style="background-color:#bbb;">
