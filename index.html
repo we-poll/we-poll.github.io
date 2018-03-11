@@ -15,7 +15,7 @@
     <p><img src="map.png" alt="map" style="float:left;width:1000px;height:500px;"></p>
     
     <b>Choose your state:</b>
-    <select name="state">
+    <select id="mySelect" onchange="myFunction()">
       <option value="alabama">Alabama</option>
       <option value="alaska">Alaska</option>
       <option value="arizona">Arizona</option>
@@ -67,9 +67,11 @@
       <option value="wisconsin">Wisconsin</option>
       <option value="wyoming">Wyoming</option>
     </select>
-<form action="virginia.html">
-<input type="virginia" value="Go to Virginia Page">
-</form>
+<script>
+function myFunction() {
+ window.location.href = "http://google.com"
+}
+</script>
   </body>
 
   
