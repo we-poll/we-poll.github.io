@@ -77,7 +77,13 @@
   Enter your name:<br>
   <input type="text" name="name" value="Your Name">
   <br><br>
-  <input type="submit" value="Submit">
+  <button onclick="newssue()">Submit</button>
+  <p id="duck"></p>
+  <script>
+   function newssue() {
+    document.getElementById("duck").innerHTML = "Hello World";
+}   
+  </script>
 </form>
 
 <br>
