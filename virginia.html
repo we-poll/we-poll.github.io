@@ -4,7 +4,7 @@
     <title>VA WePoll</title>
         <style>
           body{
-          background-color: #ccffff
+          background-color: #ccffcc
         }
         </style>
         <style>
@@ -87,15 +87,15 @@
 <div class="row">
   <div class="column" style="background-color:#aaa;">
     <b>Vote:</b>
-    <select id="voting" onchange="vote">
+    <select id="voting" onchange="vote()">
       <option value="up">Agree</option>
       <option value="down">Disagree</option>
     </select>
+ <p id="demo"></p>
 <script>
 function vote() {
- var par=document.getElementsByName('voting')[0];
-   var index=par.selectedIndex
-   console.log(par.options[index].text);
+    var x = document.getElementById("voting").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
 }
     </script>
   </div>
